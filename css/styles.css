@@ -144,9 +144,18 @@ a:hover {
 }
 
 .container a{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: inline-block;
+
+    min-width: 100px;
+    padding: 10px 14px;
+
+    text-align: center;
+
+    border-radius: 999px;
+    margin-bottom: 20px;
+
+    background: rgba(255, 230, 0, 0.24);
+    box-shadow: 0 8px 20px rgba(255,0,64,.06);
   
 }
 
@@ -247,22 +256,6 @@ a:hover {
     background: rgba(0, 0, 0, 0.5); 
     border: 1px solid rgb(194, 174, 0); 
 }
-
-.galeria-perfumes a{
-    display: inline-block;
-
-    min-width: 100px;
-    padding: 10px 14px;
-
-    text-align: center;
-
-    border-radius: 999px;
-    margin-bottom: 20px;
-
-    background: rgba(255, 230, 0, 0.24);
-    box-shadow: 0 8px 20px rgba(255,0,64,.06);
-}
-
 
 
 /*CONTATO*/
