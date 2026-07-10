@@ -327,12 +327,12 @@ a:hover {
 
 @media (max-width: 640px) {
 
-  .galeria-perfumes{
+.galeria-perfumes{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-content: center; /* Centraliza os itens */
+    grid-template-columns:1fr;
+    justify-items: center; /* Centraliza os itens */
     align-items: center;
-    gap: 15px;               /* Espaço entre eles */
+    gap: 10px;               /* Espaço entre eles */
     margin: 40px auto;
     border-radius: 10px;
 
@@ -341,8 +341,8 @@ a:hover {
 }
 
 .thumb {
-  width: 200px;
-  height: 220px;
+  width: 300px;
+  height: 320px;
   display: flex;
   justify-content: center;
   align-items: center;
