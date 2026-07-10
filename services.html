@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sofistic Perfumes</title>
+  <link rel="icon" type="image/png" href="img/logo.jpg">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>
+
+    if (window.innerWidth < 640) {
+
+        window.location.href = "menuMobile.html";
+
+    }
+
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a href="index.html" class ="logo"><img src="img/logo.jpg" alt="Logo"></a>
+      <h1>Sofistic Perfumes</h1>
+      <ul class="nav-list">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="services.html">Galeria</a></li>
+        <li><a href="contact.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Galeria de perfumes</h1>
+    <div class="galeria-perfumes">
+      <div class="thumb"><video autoplay muted loop playsinline><source src="videos/video1.mp4" type="video/mp4">Seu navegador não suporta vídeos.</source></video></div>
+      <div class="thumb"><video autoplay muted loop playsinline><source src="videos/video2.mp4" type="video/mp4">Seu navegador não suporta vídeos.</source></video></div>
+      <div class="thumb"><video autoplay muted loop playsinline><source src="videos/video3.mp4" type="video/mp4">Seu navegador não suporta vídeos.</source></video></div>
+      <div class="thumb"><img src="img/3frascos.jpg" alt="3 frascos de perfume"></div>
+    </div>
+      <a href="contact.html">Entre em contato para comprar um perfume!</a>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year4"></span> Sofistic Perfumes</p>
+  </footer>
+
+  <script>
+    document.getElementById('year4').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

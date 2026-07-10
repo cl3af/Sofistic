@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sofistic Perfumes</title>
+  <link rel="icon" type="image/png" href="img/logo.jpg">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>
+
+    if (window.innerWidth >= 640) {
+        window.location.href = "index.html";
+
+    }
+  </script>
+
+</head>
+<body class="mobile">
+  <header class="site-header">
+
+    <div class="mobile-nav">
+    <img src="img/logo.jpg" alt="logo do site" class="logo"> 
+     <button class="menu-btn" id="menuBtn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+
+     <ul class="mobile-menu" id="menu">
+      <li style="margin:8px 0"><a href="servicesMobile.html">Galeria</a></li>
+      <li style="margin:8px 0"><a href="contactMobile.html">Contato</a></li>
+    </ul>
+  </header>
+  <main class="hero">
+    <h1>Sobre nós</h1>
+    <p>Na Sofistic Perfumaria, acreditamos que uma boa fragrância transforma momentos em memórias.</p>
+    <p>Inspirados nas essências mais marcantes da perfumaria, oferecemos perfumes de alta qualidade que unem sofisticação, personalidade e excelente custo-benefício.</p>
+    <a href="servicesMobile.html">Ver Nossos Perfumes</a>
+  </main>
+  <footer class="site-footer">
+    <p>© <span id="yearM"></span> Sofistic Perfumes</p>
+  </footer>
+
+  <script>
+    document.getElementById('yearM').textContent = new Date().getFullYear();
+  </script>
+
+  <script>
+
+    const menuBtn = document.getElementById("menuBtn");
+    const menu = document.getElementById("menu");
+
+    menuBtn.addEventListener("click", ()=>{
+
+    menuBtn.classList.toggle("active");
+    menu.classList.toggle("active");
+
+    });
+    </script>
+</body>
+</html>

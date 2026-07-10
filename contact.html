@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contato — Alexandre Soares</title>
+  <link rel="icon" type="image/png" href="img/logoVirtusForge.png">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>
+    if (window.innerWidth < 640) {
+        window.location.href = "menuMobile.html";
+    }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a href="index.html" class ="logo"><img src="img/logo.jpg" alt="Logo"></a>
+      <h1>Sofistic Perfumes</h1>
+      <ul class="nav-list">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="services.html">Galeria</a></li>
+        <li><a href="contact.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Contato</h1>
+    <section>
+      <h2>Fale conosco</h2>
+      <p>Se quiser saber mais sobre nossos produtos, use os dados abaixo (clique para abrir):</p> 
+      <ul class="contact-list">
+        <li><img src="img/whatsappLogo.png" class="Whatsapp"><strong><a href="https://wa.me/5511994854921">+55 11 99485-4921</a></strong></li>
+        <li><img src="img/instagramLogo.png" class="Instagram"><strong><a href="https://www.instagram.com/sofis.ticperfumes/">@sofis.ticperfumes</a></strong></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="yearContact"></span> Sofistic Perfumes</p>
+  </footer>
+
+  <script>
+    document.getElementById('yearContact').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

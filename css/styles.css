@@ -1,0 +1,560 @@
+:root {
+  --bg: #ffffff33;
+  --neon: #000000;
+  --text: #ffffff;
+  --panelBotao: rgba(36, 36, 36, 0.493);
+}
+
+/*RESET*/
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial;
+  background-image: linear-gradient(rgba(4,11,34,0.46), rgba(4, 11, 34, 0.863)), url("../img/fundo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/*LINKS */
+
+a {
+  color: var(--text);
+  text-decoration: none;
+  position: relative; 
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* HEADER / NAVEGAÇÃO */
+
+.logo img {
+  width: 150px; 
+  height: 130px;
+}
+
+.site-header {
+  border-bottom: 4px solid rgb(194, 174, 0);
+  position: relative;  
+  background: black;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 18px 24px;
+  position: relative; 
+}
+
+.nav-list {
+  display: flex;
+  gap: 18px;
+
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list a {
+  display: inline-block;
+  padding: 8px 14px;
+
+  color: var(--text);
+  opacity: .9;
+
+  border: 0px; 
+  border-radius: 999px;
+  transition: .18s ease;
+  position: relative; 
+}
+
+.nav-list a:hover {
+  transform: translateY(-3px);
+  background: rgba(255, 230, 0, 0.24);
+  box-shadow: 0 8px 20px rgba(255, 0, 64, .06);
+  position: relative; 
+}
+
+/*HERO */
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 64vh;
+  max-width: 1500px;
+  padding: 24px;
+
+  text-align: center;
+  flex: 1;
+
+  margin: 0 auto; 
+}
+
+.hero-title {
+  margin: 0;
+  font-size: 44px;
+  color: var(--text);
+
+  text-shadow: 0 0 16px rgb(255, 255, 255);
+}
+
+ .hero a{
+    
+   display: inline-block;
+
+    min-width: 150px;
+    padding: 10px 14px;
+
+    text-align: center;
+
+    border-radius: 999px;
+
+    background: rgba(255, 230, 0, 0.24);
+    box-shadow: 0 8px 20px rgba(255,0,64,.06);
+  }
+
+/*CONTAINER*/
+
+.container {
+  max-width: 1100px;
+  margin: 0px auto;
+  padding: 0 20px;
+}
+
+.container a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+
+/*CARDS*/
+
+
+.cards {  
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  gap: 50px;
+  border: 1px solid rgba(255,255,255,.06);
+  position: relative; 
+  overflow: hidden; 
+  background: transparent;
+  
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+
+  width: 100%;
+  max-width: 900px;
+
+  margin: 0;
+  padding: 10px;
+
+  border: 1px solid rgba(255, 255, 255, 0.589);
+  border-radius: 8px; 
+  background: rgba(87, 87, 87, 0.473);
+
+  overflow: hidden; 
+}
+
+.conteudo {
+  margin: 0;
+  padding: 10px;
+  width: 100%;
+
+  background: transparent;
+  border-radius: 0;
+  position: relative; 
+  overflow: hidden; 
+}
+
+.conteudo h2 {
+  margin: 10px 0;
+}
+
+.thumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden;
+
+  color: #000;
+  font-weight: 700;
+  padding: 10px;
+
+  margin-bottom: 12px;
+}
+
+.thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 2px solid rgb(194, 174, 0);
+  border-radius: 9px;
+  box-shadow: 0px 0px 15px rgb(228, 205, 0);
+}
+
+.thumb video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border: 2px solid rgb(194, 174, 0);
+    border-radius: 9px;
+    box-shadow: 0px 0px 15px rgb(228, 205, 0);
+}
+
+/*PERFUMES*/
+
+.galeria-perfumes{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center; /* Centraliza os itens */
+    align-items: center;
+    gap: 40px;               /* Espaço entre eles */
+    margin: 40px auto;
+    border-radius: 10px;
+
+    background: rgba(0, 0, 0, 0.5); 
+    border: 1px solid rgb(194, 174, 0); 
+}
+
+
+
+/*CONTATO*/
+
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  list-style: none;
+  margin: 0;
+  padding: 12px;
+  border: 1px solid rgb(194, 174, 0); 
+}
+
+.contact-list li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.contact-list li a{
+  color: var(--text); 
+}
+
+.Whatsapp{
+  width: 65px;
+  height: 65px;
+  margin-right: 3px;
+  margin-left: 12px; 
+}
+
+.Gmail {
+  width: 55px;
+  height: 45px;
+  margin-right: 12px;
+  margin-left: 18px; 
+}
+
+.Instagram {
+  width: 75px;
+  height: 75px;
+  margin-right: 0px;
+  margin-left: 8px; 
+  margin-bottom: 12px;
+}
+/*FOOTER*/
+
+.site-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  padding: 10px;
+
+  text-align: center;
+
+  border-top: 1px solid rgb(194, 174, 0); 
+}
+
+/*DESKTOP */
+
+@media (min-width: 800px) {
+  .thumb {
+    width: 180px;
+    height: 220px;
+  }
+
+}
+
+/*MOBILE*/
+
+@media (max-width: 640px) {
+
+  .galeria-perfumes{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center; /* Centraliza os itens */
+    align-items: center;
+    gap: 15px;               /* Espaço entre eles */
+    margin: 40px auto;
+    border-radius: 10px;
+
+    background: rgba(0, 0, 0, 0.5); 
+    border: 1px solid rgb(194, 174, 0); 
+}
+
+.thumb {
+  width: 200px;
+  height: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden;
+
+  color: #000;
+  font-weight: 700;
+  padding: 30px;
+
+  margin-bottom: 12px;
+}
+  
+.thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 2px solid rgb(194, 174, 0);
+  border-radius: 9px;
+  box-shadow: 0px 0px 15px rgb(228, 205, 0);
+}
+
+.thumb video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border: 2px solid rgb(194, 174, 0);
+    border-radius: 9px;
+    box-shadow: 0px 0px 15px rgb(228, 205, 0);
+}
+
+  .mobile-nav{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+
+    width:100%;
+    gap:20px;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+.menu-btn{
+
+    display:flex;
+
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    width:50px;
+    height:50px;
+
+    cursor:pointer;
+
+    border:none;
+    background:none;
+
+}
+
+.menu-btn span{
+
+    width:28px;
+    height:3px;
+
+    margin:3px 0;
+
+    border-radius:999px;
+
+    background:white;
+
+    transition:.35s;
+
+}
+
+.menu-btn.active span:nth-child(1){
+
+    transform:
+        rotate(45deg)
+        translate(6px,6px);
+
+}
+
+.menu-btn.active span:nth-child(2){
+
+    opacity:0;
+
+}
+
+.menu-btn.active span:nth-child(3){
+
+    transform:
+        rotate(-45deg)
+        translate(6px,-6px);
+
+}
+
+.mobile-menu{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+    width:100%;
+
+    gap:12px;
+
+    list-style:none;
+    padding:0;
+    margin:0;
+
+    max-height:0;
+    overflow:hidden;
+    opacity:0;
+
+    transition:
+        max-height .4s ease,
+        opacity .3s ease;
+}
+
+.mobile-menu a{
+
+   display: inline-block;
+
+    min-width: 150px;
+    padding: 10px 14px;
+
+    text-align: center;
+
+    border-radius: 999px;
+
+    background: rgba(255, 230, 0, 0.24);
+    box-shadow: 0 8px 20px rgba(255,0,64,.06);
+}
+
+.mobile-menu.active{
+
+    max-height:400px;
+
+    opacity:1;
+
+}
+
+  .logo {
+  width: 130px; 
+  height: 100px;
+}
+
+  .hero {
+    min-height: 45vh;
+    padding: 0px;
+  }
+
+  .hero a{
+    
+   display: inline-block;
+
+    min-width: 150px;
+    padding: 10px 14px;
+
+    text-align: center;
+
+    border-radius: 999px;
+
+    background: rgba(255, 230, 0, 0.24);
+    box-shadow: 0 8px 20px rgba(255,0,64,.06);
+  }
+
+  .site-header {
+    border-bottom: 5px solid rgb(194, 174, 0);
+  }
+
+  main,
+  .container,
+  section,
+  article {
+    padding: 12px;
+    border-radius: 10px;
+  }
+
+}
+
+/*VIEW TRANSITIONS*/
+
+@view-transition {
+  navigation: auto;
+}
+
+@keyframes saindo {
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes entrando {
+  from {
+    transform: translateX(100%);
+  }
+}
+
+::view-transition-group(root) {
+  animation-duration: 1s;
+}
+
+::view-transition-old(root) {
+  animation-name: saindo;
+}
+
+::view-transition-new(root) {
+  animation-name: entrando;
+}
