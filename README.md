@@ -5,7 +5,7 @@ Essa landing page contém informações básicas do comércio de venda de perfum
 
 O layout é em tema escuro com destaques em neon e uma imagem em paralax de fundo, inclui versões desktop e mobile, e um redirecionamento simples que leva usuários móveis a uma versão dedicada.
 
-<a href="https://sofisticPerfams.netlify.app">Deploy da landing page rodando</a> 
+<a href="https://sofistic.netlify.app">Deploy da landing page rodando</a> 
 
 ## Estrutura principal
 
